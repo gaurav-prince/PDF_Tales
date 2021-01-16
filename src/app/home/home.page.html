@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="title">
+      PDF Tales
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Start Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content id="main">
+    
+    <ion-list>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<!-- <ion-menu side="start" menuId="custom" contentId="main" class="my-custom-menu">
+  <ion-header>
+    <ion-toolbar color="tertiary">
+      <ion-title>Custom Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-menu side="end" type="push" contentId="main">
+  <ion-header>
+    <ion-toolbar color="danger">
+      <ion-title>End Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content id="main">
+    <ion-list>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu> -->
+
+<ion-content [fullscreen]="true">
+  <div class="main-screen">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Blank</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <div id="container">
+      <ion-item>
+        <ion-label id="profile_image" color="primary" stacked>Choose a PDF file</ion-label>
+        <input type="file" accept="application/pdf" id="filechooser" (click)="selectAFile()" />
+      </ion-item>
+      <ion-button expand="block" size="large" >Convert to AudioBook</ion-button>
+    </div>
+  </div>
+</ion-content> 
