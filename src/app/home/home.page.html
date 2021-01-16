@@ -67,11 +67,11 @@
     </ion-header>
 
     <div id="container">
-      <ion-item>
+      <!-- <ion-item>
         <ion-label id="profile_image" color="primary" stacked>Choose a PDF file</ion-label>
         <input type="file" accept="application/pdf" id="filechooser" (click)="selectAFile()" />
-      </ion-item>
-      <ion-button expand="block" size="large" >Convert to AudioBook</ion-button>
+      </ion-item> -->
+      <ion-button expand="block" size="large" (click)="selectAFile()" >Convert to AudioBook</ion-button>
     </div>
   </div>
 </ion-content> 
